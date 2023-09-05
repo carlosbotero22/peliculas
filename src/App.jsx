@@ -1,24 +1,10 @@
-// MiComponente.js
-import Registro from './Componentes/Registro';
-import { Home } from './Componentes/Home';
 
-
-import { useState } from 'react';
-
+import { Home } from "./Componentes/Home";
 
 function App() {
 
-  const [user, setUser] = useState([])
-
   return <div>
-    
-    {
-      !user.length > 0
-        ? <Registro setUser={setUser} />
-        : <Home user={user} setUser={setUser} />
-        
-    }
-    
+    <Home/>
   </div>
 }
 
